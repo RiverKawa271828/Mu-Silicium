@@ -21,7 +21,7 @@ gConfigurationDescriptor[] = {
   {"EnableOEMSetupAppInRetail", 0x0},
   {"EnableSDHCSwitch", 0x1},
   {"EnableShell", 0x1},
-  {"EnableUfsIOC", 0x0},
+  {"EnableUfsIOC", 0x1},
   {"EnableUefiSecAppDebugLogDump", 0x0},
   {"EnableVariablePolicyEngine", 0},
   {"LoadAutoImageInPILFlag", 0x1},
