@@ -62,7 +62,8 @@
   gSiliciumPkgTokenSpaceGuid.PcdFrameBufferColorDepth|32
   # m2381 port: fb DEBUG console on screen (crawl 200ms/line), INFO level
   gSiliciumPkgTokenSpaceGuid.PcdFrameBufferDelay|0
-  gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x80001446
+  # T10 fix: actually drop DEBUG_BLKIO (0x400); 0x80001446 had dropped 0x800 (GCD) by mistake
+  gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x80001846
 
   #
   # Platform PEI
