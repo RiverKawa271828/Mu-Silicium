@@ -49,17 +49,20 @@
   # SMBIOS
   #
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemManufacturer|"Meizu"
-  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemModel|"MEIZU 20 Inf"
-  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"mars"
-  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"M2392"
-  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemBoardModel|"meizu20Inf"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemModel|"MEIZU 20"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"m2381-mars-port"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"M2381"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemBoardModel|"meizu20"
 
   #
   # Simple Frame Buffer
   #
-  gSiliciumPkgTokenSpaceGuid.PcdFrameBufferWidth|1368
-  gSiliciumPkgTokenSpaceGuid.PcdFrameBufferHeight|3192
+  gSiliciumPkgTokenSpaceGuid.PcdFrameBufferWidth|1080
+  gSiliciumPkgTokenSpaceGuid.PcdFrameBufferHeight|2400
   gSiliciumPkgTokenSpaceGuid.PcdFrameBufferColorDepth|32
+  # m2381 port: fb DEBUG console on screen (crawl 200ms/line), INFO level
+  gSiliciumPkgTokenSpaceGuid.PcdFrameBufferDelay|0
+  gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x80001C46
 
   #
   # Platform PEI
@@ -67,6 +70,8 @@
   gQcomPkgTokenSpaceGuid.PcdPlatformType|"LA"
 
 [LibraryClasses]
+  SerialPortLib|Silicon/Silicium/SiliciumPkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
+
   #
   # Memory Libraries
   #
