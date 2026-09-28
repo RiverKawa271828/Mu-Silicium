@@ -187,11 +187,13 @@ def compile_boot_shim (boot_shim_config: dict, fd_config: dict) -> bool:
 
     # Get Kernel Header Flag
     requires_kernel_header = boot_shim_config.get ("requires_kernel_header", False)
+    disable_gunyah_watchdog = boot_shim_config.get ("disable_gunyah_watchdog", False)
 
     # Set Compile Command
     cmd = [
         "make",
         f"REQUIRES_KERNEL_HEADER={int (requires_kernel_header)}",
+        f"DISABLE_GUNYAH_WATCHDOG={int (disable_gunyah_watchdog)}",
         f"FD_BASE={fd_base}",
         f"FD_SIZE={fd_size}"
     ]

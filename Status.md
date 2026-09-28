@@ -1302,6 +1302,78 @@
 </details>
 
 <details>
+<summary><b><strong>Meizu Devices</strong></b></summary>
+
+## Meizu 20 Infinity
+
+<img align="right" src="Resources/Pictures/Meizu-20-inf.png" width="350" alt="Preview">
+
+**State:** Active <br>
+**Codename:** mars
+
+**Contributors:** [silime](https://github.com/silime/)
+
+### UEFI Status
+
+| Feature            | Description | State |
+|:-------------------|:------------|:-----:|
+| Display            | SimpleFb    | ✅    |
+| Internal Storage   |             | ✅    |
+| Side Buttons       |             | ✅    |
+| USB Host Mode      |             | ❌    |
+| USB Device Mode    |             | ✅    |
+| USB Power Delivery |             | ❌    |
+| Mass Storage       |             | ✅    |
+| Windows Boot       |             | ❌    |
+| Linux Boot         |             | ✅    |
+
+### OS Status
+
+<table>
+<tr><th>Linux</th></tr>
+<tr><td>
+
+> [!IMPORTANT]
+> Linux Requires: [Mainline Kernel](https://github.com/silime/linux).
+
+| Feature              | Description                  | State |
+|:---------------------|:-----------------------------|:-----:|
+| Internal Storage     |                              | ✅    |
+| Side Buttons         |                              | ✅    |
+| Proximity Sensor     |                              | ❌    |
+| Light Sensor         |                              | ✅    |
+| Accelerometer Sensor |                              | ❌    |
+| Gyroscope Sensor     |                              | ❌    |
+| Magnetometer Sensor  |                              | ❌    |
+| Fingerprint Sensor   |                              | ❌    |
+| NFC Sensor           |                              | ❌    |
+| Temperature Sensor   |                              | ✅    |
+| Battery              |                              | ✅    |
+| USB Host Mode        |                              | ✅    |
+| USB Device Mode      |                              | ✅    |
+| USB Power Delivery   |                              | ✅    |
+| Charging             |                              | ✅    |
+| WLAN                 |                              | ✅    |
+| CPU                  |                              | ✅    |
+| Touchscreen          |                              | ✅    |
+| Bluetooth            |                              | ✅    |
+| GPS                  |                              | ✅    |
+| Speakers             |                              | ✅    |
+| Microphone           |                              | ✅    |
+| GPU                  |                              | ✅    |
+| Camera               | Only Rear IMX563             | ✅    |
+| Mobile Data          | Need to patch ModemManager   | ✅    |
+| Mobile Call          |                              | ❌    |
+| Mobile SMS           |                              | ✅    |
+| Display              | Only 3192x1368@120           | ✅    |
+| Vibration            |                              | ✅    |
+
+</td></tr>
+</table>
+
+</details>
+
+<details>
 <summary><b><strong>OnePlus Devices</strong></b></summary>
 
 ## OnePlus 12R / Ace 3

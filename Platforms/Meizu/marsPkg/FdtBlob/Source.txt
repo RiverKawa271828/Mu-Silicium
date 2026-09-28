@@ -1,0 +1,1 @@
+DTB compiled from sm8550-meizu-20-inf.dts in a local mainline Linux tree.

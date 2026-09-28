@@ -18,6 +18,23 @@ _StackSize:
 
 _Start:
   mov   x4, x1
+
+#if DISABLE_GUNYAH_WATCHDOG == 1
+  /*
+   * Some Gunyah-based boot chains leave the VM watchdog running when ABL
+   * exits boot services. Disable it before copying the firmware volume so a
+   * slow UEFI initialization cannot expire the inherited timeout.
+   *
+   * GUNYAH_WDT_CONTROL = ARM_SMCCC fast SMC32, vendor-hyp owner, function 5
+   * WDT_CTRL_DISABLE    = BIT(1)
+   */
+  movz  x0, #0x0005
+  movk  x0, #0x8600, lsl #16
+  mov   x1, #2
+  mov   x2, #0
+  smc   #0
+#endif
+
   ldr   x5, =FD_BASE
   cmp   x4, x5
   beq   _Entry
