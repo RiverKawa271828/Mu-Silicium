@@ -62,7 +62,7 @@
   gSiliciumPkgTokenSpaceGuid.PcdFrameBufferColorDepth|32
   # m2381 port: fb DEBUG console on screen (crawl 200ms/line), INFO level
   gSiliciumPkgTokenSpaceGuid.PcdFrameBufferDelay|0
-  gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x80001C46
+  gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x80001446
 
   #
   # Platform PEI
@@ -83,8 +83,6 @@
   ConfigurationMapLib|marsPkg/Library/ConfigurationMapLib/ConfigurationMapLib.inf
 
 [Components]
-  marsPkg/Drivers/UfsWakeDxe/UfsWakeDxe.inf
-
   #
   # ACPI Tables
   #

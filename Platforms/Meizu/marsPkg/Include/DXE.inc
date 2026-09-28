@@ -43,7 +43,6 @@
   INF FatPkg/EnhancedFatDxe/Fat.inf
   INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
 
-  INF marsPkg/Drivers/UfsWakeDxe/UfsWakeDxe.inf
   INF Binaries/mars/QcomPkg/Drivers/UFSDxe/UFSDxe.inf
   INF Binaries/mars/QcomPkg/Drivers/CmdDbDxe/CmdDbDxe.inf
   INF Binaries/mars/QcomPkg/Drivers/PwrUtilsDxe/PwrUtilsDxe.inf
