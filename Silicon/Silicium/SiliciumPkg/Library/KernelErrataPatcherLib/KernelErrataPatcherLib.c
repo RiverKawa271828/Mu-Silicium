@@ -170,6 +170,14 @@ KernelErrataPatcherLibConstructor (
   IN EFI_HANDLE        ImageHandle,
   IN EFI_SYSTEM_TABLE *SystemTable)
 {
+  // m2381 port (T-A4): disable the winload patcher wholesale.  Its
+  // EfiLoaderCode byte-pattern scan false-positives on Linux zboot
+  // kernels, then PatchTransferToKernel writes into the live kernel
+  // image at ExitBootServices -> Synchronous Exception (BdsDxe
+  // KepExitBootServicesHook/PatchTransferToKernel, T-A3 dump).
+  // Linux gains nothing from winload errata patching.
+  return EFI_SUCCESS;
+
   EFI_STATUS Status;
   EFI_EVENT  ReadyToBootEvent;
 
