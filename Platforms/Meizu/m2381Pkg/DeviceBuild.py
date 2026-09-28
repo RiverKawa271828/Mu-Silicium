@@ -24,10 +24,10 @@ from edk2toollib.utility_functions import RunCmd
 #                                Common Configuration                                     #
 # ####################################################################################### #
 class CommonPlatform ():
-    PackagesSupported = ("marsPkg")
+    PackagesSupported = ("m2381Pkg")
     ArchSupported = ("AARCH64")
     TargetsSupported = ("DEBUG", "RELEASE")
-    Scopes = ('mars', 'gcc_aarch64_linux', 'edk2-build')
+    Scopes = ('m2381', 'gcc_aarch64_linux', 'edk2-build')
     WorkspaceRoot = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
     PackagesPath = (
         "Platforms/Meizu",
@@ -97,10 +97,10 @@ class SettingsManager (UpdateSettingsManager, SetupSettingsManager, PrEvalSettin
         return build_these_packages
 
     def GetPlatformDscAndConfig (self) -> tuple:
-        return ("marsPkg/mars.dsc", {})
+        return ("m2381Pkg/m2381.dsc", {})
 
     def GetName (self):
-        return "mars"
+        return "m2381"
 
     def GetPackagesPath (self):
         return CommonPlatform.PackagesPath
@@ -134,7 +134,7 @@ class PlatformBuilder (UefiBuilder, BuildSettingsManager):
         return CommonPlatform.Scopes
 
     def GetName (self):
-        return "marsPkg"
+        return "m2381Pkg"
 
     def GetLoggingLevel (self, loggerType):
         return logging.INFO
@@ -143,8 +143,8 @@ class PlatformBuilder (UefiBuilder, BuildSettingsManager):
     def SetPlatformEnv (self):
         logging.debug ("PlatformBuilder SetPlatformEnv")
 
-        self.env.SetValue ("PRODUCT_NAME", "mars", "Platform Hardcoded")
-        self.env.SetValue ("ACTIVE_PLATFORM", "marsPkg/mars.dsc", "Platform Hardcoded")
+        self.env.SetValue ("PRODUCT_NAME", "m2381", "Platform Hardcoded")
+        self.env.SetValue ("ACTIVE_PLATFORM", "m2381Pkg/m2381.dsc", "Platform Hardcoded")
         self.env.SetValue ("TARGET_ARCH", "AARCH64", "Platform Hardcoded")
         self.env.SetValue ("TOOL_CHAIN_TAG", "CLANGPDB", "set default to clangpdb")
         self.env.SetValue ("EMPTY_DRIVE", "FALSE", "Default to false")

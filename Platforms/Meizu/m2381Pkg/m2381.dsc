@@ -14,15 +14,15 @@
 #
 ################################################################################
 [Defines]
-  PLATFORM_NAME                  = mars
+  PLATFORM_NAME                  = m2381
   PLATFORM_GUID                  = E40C4895-71A5-4818-9A2F-D632DBD27D53
   PLATFORM_VERSION               = 0.1
   DSC_SPECIFICATION              = 0x00010005
-  OUTPUT_DIRECTORY               = Build/marsPkg
+  OUTPUT_DIRECTORY               = Build/m2381Pkg
   SUPPORTED_ARCHITECTURES        = AARCH64
   BUILD_TARGETS                  = RELEASE|DEBUG
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = marsPkg/mars.fdf
+  FLASH_DEFINITION               = m2381Pkg/m2381.fdf
   USE_CUSTOM_DISPLAY_DRIVER      = 0
 
   #
@@ -50,7 +50,7 @@
   #
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemManufacturer|"Meizu"
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemModel|"MEIZU 20"
-  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"m2381-mars-port"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"m2381"
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"M2381"
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemBoardModel|"meizu20"
 
@@ -76,12 +76,12 @@
   #
   # Memory Libraries
   #
-  MemoryMapLib|marsPkg/Library/MemoryMapLib/MemoryMapLib.inf
+  MemoryMapLib|m2381Pkg/Library/MemoryMapLib/MemoryMapLib.inf
 
   #
   # QCOM Libraries
   #
-  ConfigurationMapLib|marsPkg/Library/ConfigurationMapLib/ConfigurationMapLib.inf
+  ConfigurationMapLib|m2381Pkg/Library/ConfigurationMapLib/ConfigurationMapLib.inf
 
 [Components]
   #

@@ -1,0 +1,4 @@
+sm8550-meizu-20.dtb — m2381 device tree (compiled from sm8550-meizu-20.dts).
+Authoritative source: pmaports device/downstream/linux-meizu-meizu20 0001 DTS patch;
+local build tree: m1-work/silime-linux branch meizu20-m2381-local.
+sha256 f6a71dc529cf20e622e580920fde2ced458a554f8d8330d7239ffcb56630230c
