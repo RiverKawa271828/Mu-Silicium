@@ -41,6 +41,10 @@ gConfigurationDescriptor[] = {
   {"SharedIMEMBaseAddr", 0x146AA000},
   {"ShmBridgememSize", 0xA00000},
   {"UfsSmmuConfigForOtherBootDev", 1},
+  // m2381 port (dm2q/b5q family recipe): do NOT put the UFS device to
+  // sleep on ExitBootServices — the Linux ufshcd does its own full init
+  // and a sleeping device broke post-EBS reads.
+  {"UEFIExitUfsSSURequired", 0x0},
   {"UsbFnIoRevNum", 0x00010001},
   {"UefiMemUseThreshold", 0xE1},
   {"USBHS1_Config", 0x0}
