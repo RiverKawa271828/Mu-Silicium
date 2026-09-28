@@ -83,6 +83,8 @@
   ConfigurationMapLib|marsPkg/Library/ConfigurationMapLib/ConfigurationMapLib.inf
 
 [Components]
+  marsPkg/Drivers/UfsWakeDxe/UfsWakeDxe.inf
+
   #
   # ACPI Tables
   #

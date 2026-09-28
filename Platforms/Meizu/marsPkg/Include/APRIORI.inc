@@ -45,6 +45,7 @@ APRIORI DXE {
   INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
 
   INF Binaries/mars/QcomPkg/Drivers/SdccDxe/SdccDxe.inf
+  INF marsPkg/Drivers/UfsWakeDxe/UfsWakeDxe.inf
   INF Binaries/mars/QcomPkg/Drivers/UFSDxe/UFSDxe.inf
 
   INF FatPkg/EnhancedFatDxe/Fat.inf
