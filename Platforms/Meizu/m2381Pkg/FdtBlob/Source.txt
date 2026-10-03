@@ -2,6 +2,9 @@ sm8550-meizu-20.dtb — m2381 device tree (compiled from sm8550-meizu-20.dts).
 Authoritative source (fork era, 2026-09-30): linux-mobile-ports (fork tree)
 branch meizu20/7.3; artifact = boot/dtbs/qcom/sm8550-meizu-20.dtb from the
 pmaports linux-meizu-meizu20 apk (build in chroot, same dtc every round).
-sha256 bc50237013ec86103e59e4bef4186d39f2dd75b46a74c4a085b255e904148fd9
-(A3: adsp_rpc_remote_heap_mem 12MB + ADSP fastrpc memory-region/qcom,vmids,
-fork 08672f98582f; r36-deployed predecessor = 048eba9a, checkpoint 7d08e41f)
+sha256 108a0a5e8b29c131a30eab746cad0990147e9774d4ceb4e41bf19cede268eb38
+(136008 B; T-TC round 2026-10-04: qcom,panel-phy-timings u8[14] byte-scale
+per stock android runtime FDT [03 26 08 09 18 25 09 0a 08 02 04 00 1f 0f],
+fork 377e4d3256ae = linux-meizu-meizu20 r53 apk, apk sha8 611fcd54;
+predecessor = factory-first v3b fork 11d8c1142b97, dtb sha8 e499c80d,
+deployed in boot_b Mu 831b1691)
