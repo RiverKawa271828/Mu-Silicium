@@ -9,3 +9,7 @@ T-TC round 2026-10-04: fork 377e4d3256ae dtb 108a0a5e (qcom,panel-phy-timings
 byte-scale) was baked in as f9808c21, built as mu-ttc-3fe4ecb0.img, flashed
 and JUDGED NEGATIVE — true-sleep wake snowflake 5/5 same structure as
 bitclk/E4 rounds. TC0-13 eliminated. Rolled back to v3b this commit.
+prep round 2026-10-04 (缺件第 2 轮前置·阶段 A): fork 02e305cf35c5 dtb 4a248839
+(136,216B; three m2381 DTS changes: iris firmware-name=qcom/vpu/vpu30_4v.mbn
+bridge, nfc@28 nxp-nci-i2c node @i2c0/a80000, haptics stub verdict=Awinic HV
+i2c 0x5a@994000). linux-meizu-meizu20 r54 apk; kernel #55.
