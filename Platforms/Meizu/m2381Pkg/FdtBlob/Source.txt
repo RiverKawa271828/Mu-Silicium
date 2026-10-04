@@ -19,3 +19,7 @@ awinic,aw86927; panel BL_MIN 50->15 in kernel .c). linux-meizu-meizu20 r55;
 kernel #56.
 r56 wrap-up 2026-10-04 (device day): fork fdc85c521bf2 dtb de3d9515 (haptics
 reset ACTIVE_LOW per live measurement; chip identified AW8697). kernel #57.
+r57 round 2026-10-04 (AW8697 driver route B, user "use B first"): fork
+a9264ee6812d dtb 6cbabfd0 (136,352B; haptics@5a compatible awinic,aw86927 ->
+awinic,aw8697 for the new in-tree aw8697.c minimal ff-memless CONT driver;
+irq99/reset109 resources unchanged). linux-meizu-meizu20 r57 apk; kernel #58.
