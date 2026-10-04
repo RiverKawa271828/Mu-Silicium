@@ -17,3 +17,5 @@ r55 mini round 2026-10-04 (device day, user calls S2=15 + haptics now): fork
 2d88f9ac6236 dtb 78cc13e6 (136,352B; +&i2c_hub_5 enable + haptics@5a
 awinic,aw86927; panel BL_MIN 50->15 in kernel .c). linux-meizu-meizu20 r55;
 kernel #56.
+r56 wrap-up 2026-10-04 (device day): fork fdc85c521bf2 dtb de3d9515 (haptics
+reset ACTIVE_LOW per live measurement; chip identified AW8697). kernel #57.
