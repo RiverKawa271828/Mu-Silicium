@@ -23,3 +23,8 @@ r57 round 2026-10-04 (AW8697 driver route B, user "use B first"): fork
 a9264ee6812d dtb 6cbabfd0 (136,352B; haptics@5a compatible awinic,aw86927 ->
 awinic,aw8697 for the new in-tree aw8697.c minimal ff-memless CONT driver;
 irq99/reset109 resources unchanged). linux-meizu-meizu20 r57 apk; kernel #58.
+inf 残留清理轮 2026-10-06 (大清理 (六十三)): fork 4ef563b1a467 dtb 2d01bf32
+(135794 B; DTS pmic-glink/sndcard compatible 去 -inf + model MEIZU20Inf->MEIZU20,
+与 qcom_battmgr.c/sc8280xp.c C match 同批; linux-meizu-meizu20 r60 apk
+7.3.0_rc3-r60; kernel #61 期望; +CONFIG_ZRAM=m 搭车). DTB = r60 apk 内
+boot/dtbs/qcom/sm8550-meizu-20.dtb.
