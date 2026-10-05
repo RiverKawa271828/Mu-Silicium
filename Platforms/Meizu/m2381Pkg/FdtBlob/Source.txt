@@ -28,3 +28,10 @@ inf 残留清理轮 2026-10-06 (大清理 (六十三)): fork 4ef563b1a467 dtb 2d
 与 qcom_battmgr.c/sc8280xp.c C match 同批; linux-meizu-meizu20 r60 apk
 7.3.0_rc3-r60; kernel #61 期望; +CONFIG_ZRAM=m 搭车). DTB = r60 apk 内
 boot/dtbs/qcom/sm8550-meizu-20.dtb.
+录音轮 A0 2026-10-06 (VA 宏 DMIC capture): fork bc6724867057 dtb 465c4dc0
+(135982 B; sound 节点加 va-dai-link[cpu TX_CODEC_DMA_TX_3/codec lpass_vamacro 0/
+platform q6apm, HDK sm8550-hdk.dts 同构] + sound pinctrl-0 追加 dmic01/23_default;
+stock flyme 录音 = PDM 数字麦, WCD 零关系). linux-meizu-meizu20 r62 apk
+7.3.0_rc3-r62; kernel #63 期望. DTB = r62 apk 内
+boot/dtbs/qcom/sm8550-meizu-20.dtb. Mu = mu-r62-9f1e8f8d.img, ESP = v44
+(d3ad95fa, BOOTAA64.EFI = r62 vmlinuz df5c7cfb).
