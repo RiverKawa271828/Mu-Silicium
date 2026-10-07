@@ -35,3 +35,10 @@ stock flyme 录音 = PDM 数字麦, WCD 零关系). linux-meizu-meizu20 r62 apk
 7.3.0_rc3-r62; kernel #63 期望. DTB = r62 apk 内
 boot/dtbs/qcom/sm8550-meizu-20.dtb. Mu = mu-r62-9f1e8f8d.img, ESP = v44
 (d3ad95fa, BOOTAA64.EFI = r62 vmlinuz df5c7cfb).
+r67/r68 补账 + r69 轮 2026-10-08 (pm_test 阶梯 + pstore demura 覆写破案):
+fork 09c641166046(r67 极性中间态)+4ea84613d3c6(r68 stock gpio-ctrl 全套
+INTB 真根因修复)+9beb8c10a21d(r69 ramoops 0xa5100000->0xa8000000 搬位,
+Mu 内存图 Display Demura 0xA2A80000+0x2B00000 每 boot 覆写=六死零现场根因)
+—— 本提交 FdtBlob = r69 apk 内 dtb 137380B(含 r68+r69 两轮 delta,
+r67/r68 当时未入库=欠账于此一并补齐)。apk 7.3.0_rc3-r69; kernel #70 期望。
+Mu = mu-r69-97cdea20.img, ESP = v50。
