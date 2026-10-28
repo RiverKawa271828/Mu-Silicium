@@ -88,3 +88,12 @@
   # ACPI Tables
   #
   #mars/AcpiTables.inf
+
+  # UniXNU boot manager + XNU loader, and the board drivers they need.
+  UniXNUPkg/Application/UniXNU/UniXNU.inf
+  UniXNUPkg/Driver/UniXNUDxe/UniXNUDxe.inf
+  DarwinBootPkg/Driver/DarwinBoot.inf
+
+[LibraryClasses]
+  UniXNULib|UniXNUPkg/Library/UniXNULib/UniXNULib.inf
+  FdtLib|MdePkg/Library/BaseFdtLib/BaseFdtLib.inf
